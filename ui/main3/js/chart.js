@@ -2,7 +2,7 @@
 function setBarChart(chart_id) {
   var chart = echarts.init(document.getElementById(chart_id));
   var option = {
-    // color: '#3398DB',
+    color: '#3398DB',
     title: {
       text: '条形图',
       textStyle: {
@@ -37,16 +37,9 @@ function setBarChart(chart_id) {
     },
     series: [
       {
-        color: '#3398DB',
         name: '销量',
         type: 'bar',
         data: [5, 20, 36, 10, 10, 20]
-      },
-      {
-        color: '#FFFF95',
-        name: '销量',
-        type: 'bar',
-        data: [15, 210, 32, 130, 120, 210]
       }
     ]
   };
@@ -142,7 +135,7 @@ function setPieChart(chart_id) {
 }
 
 function TimeControl() {
-  $(".message_scroll_box").animate({marginTop: -96}, 800,
+  $(".message_scroll_box").animate({marginTop: 96}, 800,
     function () {
       $(".message_scroll_box").css({marginTop: 0});    //把顶部的边界清零
       $(".message_scroll_box .message_scroll:first").before($(".message_scroll_box .message_scroll:last"));    //在第一个新闻后面插入最后一个新闻

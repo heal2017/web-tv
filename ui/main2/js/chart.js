@@ -2,7 +2,7 @@
 function setBarChart(chart_id) {
   var chart = echarts.init(document.getElementById(chart_id));
   var option = {
-    // color: '#3398DB',
+    color: '#3398DB',
     title: {
       text: '条形图',
       textStyle: {
@@ -37,16 +37,9 @@ function setBarChart(chart_id) {
     },
     series: [
       {
-        color: '#3398DB',
         name: '销量',
         type: 'bar',
         data: [5, 20, 36, 10, 10, 20]
-      },
-      {
-        color: '#FFFF95',
-        name: '销量',
-        type: 'bar',
-        data: [15, 210, 32, 130, 120, 210]
       }
     ]
   };
@@ -141,36 +134,21 @@ function setPieChart(chart_id) {
   chart.setOption(option);
 }
 
-function TimeControl() {
-  $(".message_scroll_box").animate({marginTop: -96}, 800,
-    function () {
-      $(".message_scroll_box").css({marginTop: 0});    //把顶部的边界清零
-      $(".message_scroll_box .message_scroll:first").before($(".message_scroll_box .message_scroll:last"));    //在第一个新闻后面插入最后一个新闻
-    });
-}
-
-var T = setInterval(TimeControl, 2300);    //开始定时
-$(".message_scroll_box").mouseenter(function () {
-  clearInterval(T);    //停止定时
-})
-.mouseleave(function () {
-  T = setInterval(TimeControl, 2500);    //再次定时
-})
-
 // var myChart4 = echarts.init(document.getElementById('main4'));
 // myChart4.setOption(option4);
 // var myChart41 = echarts.init(document.getElementById('main41'));
 // myChart41.setOption(option41);
 
-// var mySwiper2 = new Swiper('.visual_swiper2', {
-//   autoplay: true,//可选选项，自动滑动
-//   direction : 'vertical',//可选选项，滑动方向
-//   speed:2000,//可选选项，滑动速度
-// })
+var mySwiper2 = new Swiper('.visual_swiper2', {
+  autoplay: true,//可选选项，自动滑动
+  direction : 'vertical',//可选选项，滑动方向
+  speed:2000,//可选选项，滑动速度
+})
 
 setBarChart('chart1');
 setLineChart('chart2');
 setPieChart('chart3');
 setLineChart('chart4');
 setPieChart('chart5');
+setBarChart('chart6');
 
