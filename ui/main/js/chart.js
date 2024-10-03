@@ -102,30 +102,35 @@ function setLineChart(chart_id) {
   chart.setOption(option);
 }
 
-function setPieChart(chart_id) {
+function setPie1Chart(chart_id) {
   var chart = echarts.init(document.getElementById(chart_id));
 
   var option = {
     title: {
-      text: '圆饼图',
+      text: '圆饼图1',
       textStyle: {
         color: '#FFFFFF'
       }
     },
     tooltip: {},
     legend: {
-      data: [{
-          name: '销量',
-          textStyle: {
-            color: '#FFFFFF',
-            fontSize: '16'
-          }
-      }]
+      bottom: '0%',
+      left: 'center',
+      textStyle: {
+        color: '#FFFFFF'
+      }
     },
     series: [
       {
         name: '销量',
         type: 'pie',
+        radius: ['40%', '70%'],
+        itemStyle: {
+          borderRadius: 10,
+          borderColor: '#FFFFFF',
+          borderWidth: 2
+        },
+
         data: [
           { value: 1048, name: '衬衫' },
           { value: 735, name: '羊毛衫' },
@@ -141,36 +146,84 @@ function setPieChart(chart_id) {
   chart.setOption(option);
 }
 
-function TimeControl() {
-  $(".message_scroll_box").animate({marginTop: -96}, 800,
-    function () {
-      $(".message_scroll_box").css({marginTop: 0});    //把顶部的边界清零
-      $(".message_scroll_box .message_scroll:first").before($(".message_scroll_box .message_scroll:last"));    //在第一个新闻后面插入最后一个新闻
-    });
+function setPieChart(chart_id) {
+  var chart = echarts.init(document.getElementById(chart_id));
+
+  var option = {
+    title: {
+      text: '圆饼图',
+      textStyle: {
+        color: '#FFFFFF'
+      }
+    },
+    tooltip: {},
+    legend: {
+      bottom: '0%',
+      left: 'center',
+      textStyle: {
+        color: '#FFFFFF'
+      }
+    },
+    series: [
+      {
+        name: '销量',
+        type: 'pie',
+        itemStyle: {
+          borderRadius: 10,
+          borderColor: '#FFFFFF',
+          borderWidth: 2
+        },
+        data: [
+          { value: 1048, name: '衬衫' },
+          { value: 735, name: '羊毛衫' },
+          { value: 580, name: '雪纺衫' },
+          { value: 484, name: '裤子' },
+          { value: 300, name: '高跟鞋' },
+          { value: 111, name: '袜子' }
+        ]
+      }
+    ]
+  };
+
+  chart.setOption(option);
 }
-
-var T = setInterval(TimeControl, 2300);    //开始定时
-$(".message_scroll_box").mouseenter(function () {
-  clearInterval(T);    //停止定时
-})
-.mouseleave(function () {
-  T = setInterval(TimeControl, 2500);    //再次定时
-})
-
-// var myChart4 = echarts.init(document.getElementById('main4'));
-// myChart4.setOption(option4);
-// var myChart41 = echarts.init(document.getElementById('main41'));
-// myChart41.setOption(option41);
-
-// var mySwiper2 = new Swiper('.visual_swiper2', {
-//   autoplay: true,//可选选项，自动滑动
-//   direction : 'vertical',//可选选项，滑动方向
-//   speed:2000,//可选选项，滑动速度
-// })
 
 setBarChart('chart1');
 setLineChart('chart2');
 setPieChart('chart3');
 setLineChart('chart4');
-setPieChart('chart5');
+setPie1Chart('chart5');
+
+const carousel = document.querySelector('.carousel');
+const totalItems = document.querySelectorAll('.carousel li').length;
+const itemHeight = document.querySelector('.carousel li').clientHeight;
+let index = 0;
+let isTransitioning = false;
+
+function startCarousel() {
+  setInterval(() => {
+    if (!isTransitioning) {
+      isTransitioning = true;
+      index++;
+
+      if (index === totalItems) {
+        // 当到达最后一行，先瞬间跳回第一行的上一行，再继续滑动
+        index = 0;
+        carousel.style.transition = "none"; // 取消动画，瞬间回到第一个
+        carousel.style.transform = `translateY(0px)`;
+
+        // 等待一帧再加回动画，保证视觉上无缝
+        setTimeout(() => {
+          carousel.style.transition = "transform 0.5s ease-in-out";
+          isTransitioning = false;
+        }, 50); // 延迟一点时间让浏览器完成跳转
+      } else {
+        carousel.style.transform = `translateY(-${index * itemHeight}px)`;
+        isTransitioning = false;
+      }
+    }
+  }, 1000); // 每1秒切换一次
+}
+
+startCarousel();
 
