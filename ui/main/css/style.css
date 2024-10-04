@@ -8,7 +8,7 @@ body{
 }
 
 .title{
-  height:1.05rem;
+  height:4rem;
   background: url(../images/head_bg.png) no-repeat center center;
   background-size: 100% 100%;
   position: relative; 
@@ -18,8 +18,8 @@ body{
 .title h1{
   color:#ffffff;
   text-align: center;
-  font-size: .4rem;
-  line-height: .8rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .title-text{
@@ -44,7 +44,7 @@ body{
   background-color: rgba(255, 250, 250, 0.05);
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
   padding: 30px;
   // border-radius: 20px;
@@ -78,7 +78,7 @@ body{
   background-color: rgba(255, 250, 250, 0.05);
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
   padding: 30px;
   margin: 10px;
