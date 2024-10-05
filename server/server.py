@@ -21,7 +21,7 @@ def getRandomNumList(length):
       random_list.append(getRandomNum())
     return random_list
 
-template_path = 'json_templates'
+template_path = '../ui/main/json_templates'
 
 @app.route('/data1', methods=['POST'])
 def postData():
