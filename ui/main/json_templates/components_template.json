@@ -1,0 +1,292 @@
+{
+  "component1": {
+    "title": {
+      "text": "料号产出趋势",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "新增料号",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "产出料号",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "产出目标",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M01",
+        "M02",
+        "M03",
+        "  ",
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "series": [
+      {
+        "name": "新增料号",
+        "color": "#5470C6",
+        "type": "bar",
+        "data": [
+          5,
+          20,
+          36,
+          0,
+          20,
+          23,
+          12,
+          20
+        ]
+      },
+      {
+        "name": "产出料号",
+        "color": "#96CB7D",
+        "type": "bar",
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      },
+      {
+        "name": "产出目标",
+        "color": "#D5AC52",
+        "type": "line",
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "component2": {
+    "title": {
+      "text": "外部漏失趋势",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "CAM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "PDE",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "EPDM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M01",
+        "M02",
+        "M03",
+        "  ",
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "series": [
+      {
+        "name": "CAM",
+        "color": "#5470C6",
+        "type": "bar",
+        "data": [
+          5,
+          20,
+          36,
+          0,
+          20,
+          23,
+          12,
+          20
+        ]
+      },
+      {
+        "name": "PDE",
+        "color": "#96CB7D",
+        "type": "bar",
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      },
+      {
+        "name": "EPDM",
+        "color": "#D5AC52",
+        "type": "bar",
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "component3": {
+    "title": {
+      "text": "圆饼图",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "16"
+      }
+    },
+    "series": [
+      {
+        "name": "",
+        "type": "pie",
+        "itemStyle": {
+          "borderRadius": 10,
+          "borderColor": "#FFFFFF",
+          "borderWidth": 2
+        },
+        "data": [
+          { "value": 104, "name": "估价" },
+          { "value": 735, "name": "解档" },
+          { "value": 580, "name": "ECN" },
+          { "value": 484, "name": "委工" },
+          { "value": 300, "name": "新料号" },
+          { "value": 111, "name": "其它" }
+        ],
+        "label": {
+          "position": "inside"
+        }
+      }
+    ]
+  },
+  "component4": {
+    "title": {
+      "text": "圆饼图1",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "16"
+      }
+    },
+    "series": [
+      {
+        "name": "",
+        "type": "pie",
+        "radius": ["40%", "70%"],
+        "itemStyle": {
+          "borderRadius": 10,
+          "borderColor": "#FFFFFF",
+          "borderWidth": 2
+        },
+        "data": [
+          { "value": 104, "name": "估价" },
+          { "value": 735, "name": "解档" },
+          { "value": 580, "name": "ECN" },
+          { "value": 484, "name": "委工" },
+          { "value": 300, "name": "新料号" },
+          { "value": 111, "name": "其它" }
+        ]
+      }
+    ]
+  }
+}

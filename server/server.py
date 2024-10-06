@@ -23,14 +23,30 @@ def getRandomNumList(length):
 
 template_path = '../ui/main/json_templates'
 
-@app.route('/data1', methods=['POST'])
+@app.route('/data', methods=['POST'])
 def postData():
-    # char1
-    with open(f'{template_path}/chart1_template.json', 'r') as fo:
-      chart1_data = json.load(fo)
-    for i in list(range(len(chart1_data['series']))):
-      chart1_data['series'][i]['data'] = getRandomNumList(6)
-    return jsonify(chart1_data)
+    with open(f'{template_path}/components_template.json', 'r') as fo:
+      component_data = json.load(fo)
+
+    # component1
+    for i in list(range(len(component_data['component1']['series']))):
+      component_data['component1']['series'][i]['data'] = getRandomNumList(3) + [0] + getRandomNumList(4)
+
+    # component2
+    for i in list(range(len(component_data['component2']['series']))):
+      component_data['component2']['series'][i]['data'] = getRandomNumList(3) + [0] + getRandomNumList(4)
+
+    # component3
+    for i in list(range(len(component_data['component3']['series']))):
+      for j in list(range(len(component_data['component3']['series'][i]['data']))):
+        component_data['component3']['series'][i]['data'][j]['value'] = getRandomNum()
+
+    # component4
+    for i in list(range(len(component_data['component4']['series']))):
+      for j in list(range(len(component_data['component4']['series'][i]['data']))):
+        component_data['component4']['series'][i]['data'][j]['value'] = getRandomNum()
+
+    return jsonify(component_data)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

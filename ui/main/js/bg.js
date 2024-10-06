@@ -1,23 +1,21 @@
 //宇宙特效
 "use strict";
-var canvas = document.getElementById('canvas'),
-  ctx = canvas.getContext('2d'),
-  w = canvas.width = window.innerWidth,
-  h = canvas.height = window.innerHeight,
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var w = canvas.width = window.innerWidth;
+var h = canvas.height = window.innerHeight;
 
-  hue = 217,
-  stars = [],
-  count = 0,
-  maxStars = 1300;//星星数量
+var hue = 217;
+var stars = [];
+var count = 0;
+var maxStars = 1300;//星星数量
 
-console.log(canvas);
-
-var canvas2 = document.createElement('canvas'),
-  ctx2 = canvas2.getContext('2d');
+var canvas2 = document.createElement('canvas');
+var ctx2 = canvas2.getContext('2d');
 canvas2.width = 100;
 canvas2.height = 100;
-var half = canvas2.width / 2,
-  gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+var half = canvas2.width / 2;
+var gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
 gradient2.addColorStop(0.025, '#CCC');
 gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
 gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
@@ -27,8 +25,6 @@ ctx2.fillStyle = gradient2;
 ctx2.beginPath();
 ctx2.arc(half, half, half, 0, Math.PI * 2);
 ctx2.fill();
-
-// End cache
 
 function random(min, max) {
   if (arguments.length < 2) {
@@ -46,10 +42,10 @@ function random(min, max) {
 }
 
 function maxOrbit(x, y) {
-  var max = Math.max(x, y),
-    diameter = Math.round(Math.sqrt(max * max + max * max));
+  var max = Math.max(x, y);
+  var diameter = Math.round(Math.sqrt(max * max + max * max));
   return diameter / 2;
-  //星星移动范围，值越大范围越小，
+  //星星移动范围，值越大范围越小
 }
 
 var Star = function() {
@@ -69,9 +65,9 @@ var Star = function() {
 }
 
 Star.prototype.draw = function() {
-  var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
-    y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
-    twinkle = random(10);
+  var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX;
+  var y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY;
+  var twinkle = random(10);
 
   if (twinkle === 1 && this.alpha > 0) {
     this.alpha -= 0.05;

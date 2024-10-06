@@ -1,32 +1,32 @@
 ﻿@charset "utf-8";
 
 body{
-  background: rgba(0, 14, 72, 0.9) center top;
+  background: rgba(0, 14, 72, 1) center top;
   background-size:cover;
-  color:#666;
-  font-size: .1rem;
 }
 
-.title{
-  height:4rem;
-  background: url(../images/head_bg.png) no-repeat center center;
-  background-size: 100% 100%;
-  position: relative; 
+.title {
+  position: relative;
+  display: inline-block;
   z-index: 1;
 }
 
-.title h1{
-  color:#ffffff;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 3rem;
+.title img {
+  max-width: 100%;
+  height: 6vh;
+  width: 100vw;
+  display: block;
 }
 
-.title-text{
-  color:#ffffff;
-  text-align: left;
-  font-size: 20px;
-  line-height: .2rem;
+.title .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 3vh;
+  font-size: 2vw;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .flex-row{
@@ -40,53 +40,21 @@ body{
 }
 
 .container{
+  height: 37vh;
+  width: 30%;
+  padding: 3vh;
+  border-radius: 2vh;
+  border: 0.5vh solid rgba(0, 124, 72, 1);
+  margin: 1vh;
   display: flex;
   background-color: rgba(155, 150, 250, 0.15);
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 100%;
-  padding: 30px;
-  // border-radius: 20px;
-  margin: 10px;
+  overflow: hidden;
   z-index: 1;
 }
 
-.container:before,
-.container:after{
-  position:absolute;
-  width: .5rem;
-  height: .5rem;
-  content: "";
-}
-
-.container:before{
-  border-top: 4px solid #02a6b5;
-  top: 0px;
-  border-left: 4px solid #02a6b5;
-  left: 0px;
-}
-
-.container:after{
-  border-bottom: 4px solid #02a6b5;
-  bottom: 0px;
-  border-right: 4px solid #02a6b5;
-  right: 0px;
-}
-
-.carousel-container {
-  display: flex;
-  background-color: rgba(155, 150, 250, 0.15);
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 100%;
-  padding: 30px;
-  margin: 10px;
-  overflow: hidden;
-}
-
-.carousel-container .carousel {
+.container .carousel {
   width: 100%;
   list-style: none;
   padding: 0;
@@ -95,10 +63,14 @@ body{
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-container .carousel li {
-  height: 60px;
-  line-height: 60px;
+.carousel li {
+  line-height: 10vh;
+  font-size: 3vh;
   text-align: left;
-  font-size: 20px;
 }
 
+#canvas {
+  position:absolute;
+  top:0;
+  left:0;
+}
