@@ -30,12 +30,14 @@ async function fetchLocalData() {
     component4.setOption(component4_data);
 
     // component5
-    // var component5 = echarts.init(document.getElementById('component5'));
-    // var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
-    // component5.setOption(component5_data);
+    var component5 = echarts.init(document.getElementById('component5'));
+    var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
+    component5.setOption(component5_data);
 
     // component6
-    // todo
+    var component6 = echarts.init(document.getElementById('component6'));
+    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    setOption(component6_data);
 
   } catch (error) {
     console.error('Local Json Error!', error);
@@ -45,7 +47,8 @@ async function fetchLocalData() {
 // POST请求数据
 async function fetchData() {
   try {
-    const response = await fetch('http://127.0.0.1:5000/data', {
+    const api_url = 'http://10.136.67.29:5000/data'
+    const response = await fetch(api_url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json; charset=UTF-8'
@@ -73,31 +76,38 @@ async function fetchData() {
     var component3_data = JSON.parse(JSON.stringify(jsonData))['component3'];
     component3.setOption(component3_data);
 
-    component4
+    // component4
     var component4 = echarts.init(document.getElementById('component4'));
     var component4_data = JSON.parse(JSON.stringify(jsonData))['component4'];
     component4.setOption(component4_data);
 
     // component5
-    // var component5 = echarts.init(document.getElementById('component5'));
-    // var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
-    // component5.setOption(component5_data);
+    var component5 = echarts.init(document.getElementById('component5'));
+    var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
+    component5.setOption(component5_data);
 
     // component6
-    // todo
+    var component6 = echarts.init(document.getElementById('component6'));
+    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    setOption(component6_data);
+
   } catch (error) {
     console.error('Network Json Error!', error);
   }
 }
 
-try {
-  window.onload = fetchData;
-} catch (error) {
-  console.error('POST请求错误:', error)
-} finally {
-  window.onload = fetchLocalData;
+async function run() {
+  try {
+    window.onload = fetchData;
+  } catch (error) {
+    console.error('POST请求错误:', error)
+  } finally {
+    window.onload = fetchLocalData;
+  }
+  
+  await setInterval(fetchData, 2000);
+  await fetchLocalData();
+  await startCarousel();
 }
 
-setInterval(fetchData, 1000);
-fetchLocalData();
-
+run();

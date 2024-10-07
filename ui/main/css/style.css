@@ -40,9 +40,9 @@ body{
 }
 
 .container{
-  height: 37vh;
-  width: 30%;
-  padding: 3vh;
+  height: 42vh;
+  width: 33%;
+  padding: 0.2vh;
   border-radius: 2vh;
   border: 0.5vh solid rgba(0, 124, 72, 1);
   margin: 1vh;
@@ -65,11 +65,33 @@ body{
 
 .carousel li {
   line-height: 10vh;
-  font-size: 3vh;
+  font-size: 4vh;
   text-align: left;
 }
 
+.carousel li:nth-of-type(2n) {
+  color: rgba(255, 125, 255, 1);
+}
+
+.carousel li:nth-of-type(2n+1) {
+  color: rgba(255, 255, 0, 1);
+}
+
+.carousel li span:before {
+  content: ' '
+}
+
+.carousel li span:nth-of-type(2n) {
+  color: rgba(125, 200, 100, 1);
+}
+
+.carousel li span:nth-of-type(2n+1) {
+  color: rgba(200, 125, 100, 1);
+}
+
 #canvas {
+  width: 100vw;
+  height: 100vh;
   position:absolute;
   top:0;
   left:0;

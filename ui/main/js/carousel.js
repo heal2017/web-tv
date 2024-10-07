@@ -1,8 +1,38 @@
 
+function removeChildsBySelector(selector) {
+  var ul = document.querySelector(selector);
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild);
+  }
+}
+
+function appendChildsOnElement(selector, data) {
+  var ul = document.querySelector(selector);
+
+  data.forEach(obj => {
+    var li = document.createElement('li');
+    li.textContent = obj.name;
+
+    obj.value.forEach(dat => {
+      var span = document.createElement('span');
+      span.textContent = dat;
+      li.appendChild(span);
+    })
+
+    ul.appendChild(li);
+  });
+}
+
+function setOption(data) {
+  removeChildsBySelector('.carousel');
+  appendChildsOnElement('.carousel', data)
+}
+
 function startCarousel() {
   const carousel = document.querySelector('.carousel');
   const totalItems = document.querySelectorAll('.carousel li').length;
   const itemHeight = document.querySelector('.carousel li').clientHeight;
+
   let index = 0;
   let isTransitioning = false;
 
@@ -30,5 +60,4 @@ function startCarousel() {
   }, 1000); // 每1秒切换一次
 }
 
-startCarousel();
 

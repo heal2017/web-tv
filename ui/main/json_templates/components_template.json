@@ -215,6 +215,125 @@
   },
   "component3": {
     "title": {
+      "text": "外部漏失趋势1",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "CAM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "PDE",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "EPDM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "yAxis": {
+      "data": [
+        "M01",
+        "M02",
+        "M03",
+        "  ",
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "series": [
+      {
+        "name": "CAM",
+        "color": "#5470C6",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          5,
+          20,
+          36,
+          0,
+          20,
+          23,
+          12,
+          20
+        ]
+      },
+      {
+        "name": "PDE",
+        "color": "#96CB7D",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      },
+      {
+        "name": "EPDM",
+        "color": "#D5AC52",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          15,
+          110,
+          32,
+          0,
+          120,
+          10,
+          20,
+          20
+        ]
+      }
+    ]
+  },
+  "component4": {
+    "title": {
       "text": "圆饼图",
       "textStyle": {
         "color": "#FFFFFF"
@@ -252,7 +371,7 @@
       }
     ]
   },
-  "component4": {
+  "component5": {
     "title": {
       "text": "圆饼图1",
       "textStyle": {
@@ -285,8 +404,30 @@
           { "value": 484, "name": "委工" },
           { "value": 300, "name": "新料号" },
           { "value": 111, "name": "其它" }
-        ]
+        ],
+        "label": {
+          "textShadowBlur": 0,
+          "textShadowColor": "red"
+        }
       }
     ]
-  }
+  },
+  "component6": [
+    {
+      "name": "Item1",
+      "value": ["11", "22", "33"]
+    },
+    {
+      "name": "Item2",
+      "value": ["44", "55", "66"]
+    },
+    {
+      "name": "Item3",
+      "value": ["44", "55", "66"]
+    },
+    {
+      "name": "Item4",
+      "value": ["44", "55", "66"]
+    }
+  ]
 }
