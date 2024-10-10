@@ -63,6 +63,9 @@
         "name": "新增料号",
         "color": "#5470C6",
         "type": "bar",
+        "label": {
+          "show": "true"
+        },
         "data": [
           5,
           20,
@@ -78,6 +81,9 @@
         "name": "产出料号",
         "color": "#96CB7D",
         "type": "bar",
+        "label": {
+          "show": "true"
+        },
         "data": [
           15,
           110,
@@ -170,6 +176,9 @@
         "name": "CAM",
         "color": "#5470C6",
         "type": "bar",
+        "label": {
+          "show": "true"
+        },
         "data": [
           5,
           20,
@@ -185,6 +194,9 @@
         "name": "PDE",
         "color": "#96CB7D",
         "type": "bar",
+        "label": {
+          "show": "true"
+        },
         "data": [
           15,
           110,
@@ -200,6 +212,9 @@
         "name": "EPDM",
         "color": "#D5AC52",
         "type": "bar",
+        "label": {
+          "show": "true"
+        },
         "data": [
           15,
           110,
@@ -352,11 +367,6 @@
       {
         "name": "",
         "type": "pie",
-        "itemStyle": {
-          "borderRadius": 10,
-          "borderColor": "#FFFFFF",
-          "borderWidth": 2
-        },
         "data": [
           { "value": 104, "name": "估价" },
           { "value": 735, "name": "解档" },
@@ -392,11 +402,6 @@
         "name": "",
         "type": "pie",
         "radius": ["40%", "70%"],
-        "itemStyle": {
-          "borderRadius": 10,
-          "borderColor": "#FFFFFF",
-          "borderWidth": 2
-        },
         "data": [
           { "value": 104, "name": "估价" },
           { "value": 735, "name": "解档" },
