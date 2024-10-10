@@ -1,7 +1,7 @@
 ﻿@charset "utf-8";
 
 body {
-  background: rgba(0, 50, 100, 1) center top;
+  background: rgba(12, 12, 50, 1) center top;
   background-size: cover;
 }
 
@@ -32,20 +32,24 @@ body {
   display: flex;
   position: relative;
   flex-direction: row;
-  height: 43vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  height: 92vh;
 }
 
-.container {
+.flex-column {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 32vw;
-  margin-left: 1vh;
-  margin-right: 1vh;
-  padding: 1vh;
-  background-color: rgba(255, 150, 200, 0.15);
+  margin: 1vh;
+  background-color: rgba(80, 80, 0, 0.2);
+  border-radius: 2vh;
+}
+
+.container {
+  position: relative;
+  margin: 1vh;
+  height: 100%;
+  width: 22.2vw;
+  background-color: rgba(0, 80, 0, 0.3);
   overflow: hidden;
 }
 

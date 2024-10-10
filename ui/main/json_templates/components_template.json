@@ -1,7 +1,7 @@
 {
   "component1": {
     "title": {
-      "text": "料号产出趋势",
+      "text": "M10 料号产出",
       "textStyle": {
         "color": "#FFFFFF"
       }
@@ -11,13 +11,6 @@
       "bottom": "0%",
       "left": "center",
       "data": [
-        {
-          "name": "新增料号",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        },
         {
           "name": "产出料号",
           "textStyle": {
@@ -26,7 +19,7 @@
           }
         },
         {
-          "name": "产出目标",
+          "name": "目标产出",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -36,14 +29,7 @@
     },
     "xAxis": {
       "data": [
-        "M01",
-        "M02",
-        "M03",
-        "  ",
-        "W01",
-        "W02",
-        "W03",
-        "W04"
+        "M10"
       ],
       "axisLine": {
         "lineStyle": {
@@ -60,61 +46,32 @@
     },
     "series": [
       {
-        "name": "新增料号",
+        "name": "产出料号",
         "color": "#5470C6",
         "type": "bar",
         "label": {
           "show": "true"
         },
         "data": [
-          5,
-          20,
-          36,
-          0,
-          20,
-          23,
-          12,
           20
         ]
       },
       {
-        "name": "产出料号",
+        "name": "目标产出",
         "color": "#96CB7D",
         "type": "bar",
         "label": {
           "show": "true"
         },
         "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
-        ]
-      },
-      {
-        "name": "产出目标",
-        "color": "#D5AC52",
-        "type": "line",
-        "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
+          50
         ]
       }
     ]
   },
   "component2": {
     "title": {
-      "text": "外部漏失趋势",
+      "text": "W50 料号产出",
       "textStyle": {
         "color": "#FFFFFF"
       }
@@ -125,21 +82,14 @@
       "left": "center",
       "data": [
         {
-          "name": "CAM",
+          "name": "产出料号",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
           }
         },
         {
-          "name": "PDE",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        },
-        {
-          "name": "EPDM",
+          "name": "目标产出",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -149,14 +99,7 @@
     },
     "xAxis": {
       "data": [
-        "M01",
-        "M02",
-        "M03",
-        "  ",
-        "W01",
-        "W02",
-        "W03",
-        "W04"
+        "M10"
       ],
       "axisLine": {
         "lineStyle": {
@@ -173,64 +116,32 @@
     },
     "series": [
       {
-        "name": "CAM",
+        "name": "产出料号",
         "color": "#5470C6",
         "type": "bar",
         "label": {
           "show": "true"
         },
         "data": [
-          5,
-          20,
-          36,
-          0,
-          20,
-          23,
-          12,
           20
         ]
       },
       {
-        "name": "PDE",
+        "name": "目标产出",
         "color": "#96CB7D",
         "type": "bar",
         "label": {
           "show": "true"
         },
         "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
-        ]
-      },
-      {
-        "name": "EPDM",
-        "color": "#D5AC52",
-        "type": "bar",
-        "label": {
-          "show": "true"
-        },
-        "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
+          50
         ]
       }
     ]
   },
   "component3": {
     "title": {
-      "text": "外部漏失趋势1",
+      "text": "10/10 料号产出",
       "textStyle": {
         "color": "#FFFFFF"
       }
@@ -241,21 +152,14 @@
       "left": "center",
       "data": [
         {
-          "name": "CAM",
+          "name": "产出料号",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
           }
         },
         {
-          "name": "PDE",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        },
-        {
-          "name": "EPDM",
+          "name": "目标产出",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -264,22 +168,8 @@
       ]
     },
     "xAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
-        }
-      }
-    },
-    "yAxis": {
       "data": [
-        "M01",
-        "M02",
-        "M03",
-        "  ",
-        "W01",
-        "W02",
-        "W03",
-        "W04"
+        "M10"
       ],
       "axisLine": {
         "lineStyle": {
@@ -287,69 +177,41 @@
         }
       }
     },
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
     "series": [
       {
-        "name": "CAM",
+        "name": "产出料号",
         "color": "#5470C6",
         "type": "bar",
-        "stack": "total",
         "label": {
           "show": "true"
         },
         "data": [
-          5,
-          20,
-          36,
-          0,
-          20,
-          23,
-          12,
           20
         ]
       },
       {
-        "name": "PDE",
+        "name": "目标产出",
         "color": "#96CB7D",
         "type": "bar",
-        "stack": "total",
         "label": {
           "show": "true"
         },
         "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
-        ]
-      },
-      {
-        "name": "EPDM",
-        "color": "#D5AC52",
-        "type": "bar",
-        "stack": "total",
-        "label": {
-          "show": "true"
-        },
-        "data": [
-          15,
-          110,
-          32,
-          0,
-          120,
-          10,
-          20,
-          20
+          50
         ]
       }
     ]
   },
   "component4": {
     "title": {
-      "text": "圆饼图",
+      "text": "M10 MO",
       "textStyle": {
         "color": "#FFFFFF"
       }
@@ -358,32 +220,68 @@
     "legend": {
       "bottom": "0%",
       "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "16"
+      "data": [
+        {
+          "name": "外部MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M10"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
       }
     },
     "series": [
       {
-        "name": "",
-        "type": "pie",
-        "data": [
-          { "value": 104, "name": "估价" },
-          { "value": 735, "name": "解档" },
-          { "value": 580, "name": "ECN" },
-          { "value": 484, "name": "委工" },
-          { "value": 300, "name": "新料号" },
-          { "value": 111, "name": "其它" }
-        ],
+        "name": "外部MO",
+        "color": "#5470C6",
+        "type": "bar",
         "label": {
-          "position": "inside"
-        }
+          "show": "true"
+        },
+        "data": [
+          20
+        ]
+      },
+      {
+        "name": "目标MO",
+        "color": "#96CB7D",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          50
+        ]
       }
     ]
   },
   "component5": {
     "title": {
-      "text": "圆饼图1",
+      "text": "W50 MO",
       "textStyle": {
         "color": "#FFFFFF"
       }
@@ -392,47 +290,133 @@
     "legend": {
       "bottom": "0%",
       "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "16"
+      "data": [
+        {
+          "name": "外部MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M10"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
       }
     },
     "series": [
       {
-        "name": "",
-        "type": "pie",
-        "radius": ["40%", "70%"],
-        "data": [
-          { "value": 104, "name": "估价" },
-          { "value": 735, "name": "解档" },
-          { "value": 580, "name": "ECN" },
-          { "value": 484, "name": "委工" },
-          { "value": 300, "name": "新料号" },
-          { "value": 111, "name": "其它" }
-        ],
+        "name": "外部MO",
+        "color": "#5470C6",
+        "type": "bar",
         "label": {
-          "textShadowBlur": 0,
-          "textShadowColor": "red"
-        }
+          "show": "true"
+        },
+        "data": [
+          20
+        ]
+      },
+      {
+        "name": "目标MO",
+        "color": "#96CB7D",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          50
+        ]
       }
     ]
   },
-  "component6": [
-    {
-      "name": "Item1",
-      "value": ["11", "22", "33"]
+  "component6": {
+    "title": {
+      "text": "10/10 MO",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
     },
-    {
-      "name": "Item2",
-      "value": ["44", "55", "66"]
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "外部MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标MO",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
     },
-    {
-      "name": "Item3",
-      "value": ["44", "55", "66"]
+    "xAxis": {
+      "data": [
+        "M10"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
     },
-    {
-      "name": "Item4",
-      "value": ["44", "55", "66"]
-    }
-  ]
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "series": [
+      {
+        "name": "外部MO",
+        "color": "#5470C6",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          20
+        ]
+      },
+      {
+        "name": "目标MO",
+        "color": "#96CB7D",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          50
+        ]
+      }
+    ]
+  }
 }

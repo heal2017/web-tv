@@ -24,6 +24,21 @@ async function fetchLocalData() {
     var component3_data = JSON.parse(JSON.stringify(jsonData))['component3'];
     component3.setOption(component3_data);
 
+    // component4
+    var component4 = echarts.init(document.getElementById('component4'));
+    var component4_data = JSON.parse(JSON.stringify(jsonData))['component4'];
+    component4.setOption(component4_data);
+
+    // component5
+    var component5 = echarts.init(document.getElementById('component5'));
+    var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
+    component5.setOption(component5_data);
+
+    // component6
+    var component6 = echarts.init(document.getElementById('component6'));
+    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    component6.setOption(component6_data);
+
     // // component4
     // var component4 = echarts.init(document.getElementById('component4'));
     // var component4_data = JSON.parse(JSON.stringify(jsonData))['component4'];
@@ -34,10 +49,10 @@ async function fetchLocalData() {
     // var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
     // component5.setOption(component5_data);
 
-    // component6
-    var component6 = echarts.init(document.getElementById('component6'));
-    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
-    setOption(component6_data);
+    // // component6
+    // var component6 = echarts.init(document.getElementById('component6'));
+    // var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    // setOption(component6_data);
 
   } catch (error) {
     console.error('Local Json Error!');
@@ -76,6 +91,21 @@ async function fetchData() {
     var component3_data = JSON.parse(JSON.stringify(jsonData))['component3'];
     component3.setOption(component3_data);
 
+    // component4
+    var component4 = echarts.init(document.getElementById('component4'));
+    var component4_data = JSON.parse(JSON.stringify(jsonData))['component4'];
+    component4.setOption(component4_data);
+
+    // component5
+    var component5 = echarts.init(document.getElementById('component5'));
+    var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
+    component5.setOption(component5_data);
+
+    // component6
+    var component6 = echarts.init(document.getElementById('component6'));
+    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    component6.setOption(component6_data);
+
     // // component4
     // var component4 = echarts.init(document.getElementById('component4'));
     // var component4_data = JSON.parse(JSON.stringify(jsonData))['component4'];
@@ -86,10 +116,10 @@ async function fetchData() {
     // var component5_data = JSON.parse(JSON.stringify(jsonData))['component5'];
     // component5.setOption(component5_data);
 
-    // component6
-    var component6 = echarts.init(document.getElementById('component6'));
-    var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
-    setOption(component6_data);
+    // // component6
+    // var component6 = echarts.init(document.getElementById('component6'));
+    // var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
+    // setOption(component6_data);
 
   } catch (error) {
     console.error('Network Json Error!', error);
