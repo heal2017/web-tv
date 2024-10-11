@@ -1,99 +1,84 @@
 {
   "component1": {
-    "grid": {
-      "top": "50",
-      "bottom": "20%"
+    "title": {
+      "text": "M10 料号产出",
+      "textStyle": {
+        "color": "#FFFFFF"
+      }
     },
+    "tooltip": {},
     "legend": {
-      "data": ["销售码洋", "同比增长"],
-      "right":"5%",
-      "itemWidth":"18",
-      "itemHeight":"12",
-      "textStyle":{
-        "color":"#fff"
-      }
-    },
-    "xAxis":{
-      "data":[
-        "1月",
-        "2月",
-        "3月"
-      ],
-      "axisLine":{
-        "show":false,
-        "lineStyle":{
-          "color":"#07bffb"
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "产出料号",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标产出",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
         }
-      },
-      "axisTick":{
-        "show":false
-      },
-      "axisLabel":{
-        "interval":0
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M10"
+      ],
+      "axisLine": {
+        "show": "false",
+        "lineStyle": {
+          "color": "#FFFFFF"
+        },
+        "axisTick": {
+          "show": "false"
+        },
+        "splitLine": {
+          "show": "false"
+        },
+        "axisLabel": {
+          "interval": "0"
+        }
       }
     },
-    "yAxis":[
-      {
-        "name":"码洋(/千万)",
-        "axisLine":{
-          "show":false,
-          "lineStyle":{
-            "color":"#07bffb"
-          }
-        },
-        "splitLine":{
-          "show":false
-        },
-        "axisTick":{
-          "show":false
-        },
-        "interval":5,
-        "min":0,
-        "max":20,
-        "position":"left"
-      },
-      {
-        "name":"同比增长(%)",
-        "max":100,
-        "min":0,
-        "axisLabel":{
-          "formatter":"{value}"
-        },
-        "axisLine":{
-          "show":false,
-          "lineStyle":{
-            "color":"#07bffb"
-          }
-        },
-        "splitLine":{
-          "show":false
-        },
-        "axisTick":{
-          "show":false
-        },
-        "position":"right"
+    "yAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
       }
-    ],
-    "series":[
+    },
+    "series": [
       {
-        "name":"销售码洋",
-        "type":"bar",
-        "barWidth":"40%",
-        "barGap":5,
-        "data":[2.5, 5.4, 6.4]
+        "name": "产出料号",
+        "color": "#5470C6",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          20
+        ]
       },
       {
-        "name":"同比增长",
-        "type":"line",
-        "itemStyle":{
-          "color":"#fff"
+        "name": "目标产出",
+        "color": "#96CB7D",
+        "type": "bar",
+        "label": {
+          "show": "true"
         },
-        "yAxisIndex":1,
-        "data":[10, 8, 36]
+        "data": [
+          50
+        ]
       }
     ]
   },
-
   "component2": {
     "title": {
       "text": "W50 料号产出",
