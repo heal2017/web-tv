@@ -1,83 +1,72 @@
 {
   "component1": {
     "title": {
-      "text": "M01 料号产出",
+      "text": "M10 料号产出",
+      "top": "top",
+      "left": "center",
       "textStyle": {
-        "color": "#FFFFFF"
+        "color": "#FFFFFF",
+        "fontSize": "24"
       }
     },
+    "tooltip": {},
     "legend": {
-      "bottom": "0%",
-      "left": "center",
-      "data": [
-        {
-          "name": "产出料号",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        },
-        {
-          "name": "目标产出",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        }
-      ]
+      "show": false
     },
     "xAxis":{
       "data": [
-        "M10"
+        "产出目标", "产出料号"
       ],
       "axisLine": {
         "show": false,
         "lineStyle": {
-          "color": "#FFFFFF"
+          "color": "FFFFFF"
         }
       },
-      "axisTick":{
-        "show":false
+      "axisLabel": {
+        "fontSize": 20
+      },
+      "axisTick": {
+        "show": true
       }
     },
-    "yAxis":[
-      {
-        "name":"数量(支)",
-        "axisLine":{
-          "show":false,
-          "lineStyle":{
-            "color":"#FFFFFF"
+    "yAxis": {
+        "name": "数量(颗)",
+        "axisLine": {
+          "show": false,
+          "lineStyle": {
+            "color": "#FFFFFF"
           }
         },
-        "splitLine":{
-          "show":false
-        },
-        "axisTick":{
-          "show":false
+        "splitLine": {
+          "show": false
         }
-      }
-    ],
-    "series":[
-      {
-        "name": "产出料号",
-        "color": "#5470C6",
-        "type": "bar",
-        "label": {
-          "show": "true"
-        },
-        "data": [
-          20
-        ]
-      },
+    },
+    "series": [
       {
         "name": "目标产出",
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
-          50
+          {
+            "value": 80,
+            "itemStyle": {
+              "color": "#96CB7D"
+            }
+          },
+          {
+            "value": 85,
+            "itemStyle": {
+              "color": "#5470C6"
+            }
+          }
         ]
       }
     ]
@@ -85,74 +74,77 @@
 
   "component2": {
     "title": {
-      "text": "W50 料号产出",
+      "text": "W42 料号产出",
+      "top": "top",
+      "left": "center",
       "textStyle": {
-        "color": "#FFFFFF"
+        "color": "#FFFFFF",
+        "fontSize": "24"
       }
     },
     "tooltip": {},
     "legend": {
-      "bottom": "0%",
-      "left": "center",
-      "data": [
-        {
-          "name": "产出料号",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        },
-        {
-          "name": "目标产出",
-          "textStyle": {
-            "color": "#FFFFFF",
-            "fontSize": "16"
-          }
-        }
-      ]
+      "show": false
     },
-    "xAxis": {
+    "xAxis":{
       "data": [
-        "M10"
+        "产出目标", "产出料号"
       ],
       "axisLine": {
+        "show": false,
         "lineStyle": {
-          "color": "#FFFFFF"
+          "color": "FFFFFF"
         }
+      },
+      "axisLabel": {
+        "fontSize": 20
+      },
+      "axisTick": {
+        "show": true
       }
     },
     "yAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+        "name": "数量(颗)",
+        "axisLine": {
+          "show": false,
+          "lineStyle": {
+            "color": "#FFFFFF"
+          }
+        },
+        "splitLine": {
+          "show": false
         }
-      }
     },
     "series": [
-      {
-        "name": "产出料号",
-        "color": "#5470C6",
-        "type": "bar",
-        "label": {
-          "show": "true"
-        },
-        "data": [
-          20
-        ]
-      },
       {
         "name": "目标产出",
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
-          50
+          {
+            "value": 20,
+            "itemStyle": {
+              "color": "#96CB7D"
+            }
+          },
+          {
+            "value": 15,
+            "itemStyle": {
+              "color": "#A04040"
+            }
+          }
         ]
       }
     ]
   },
+
   "component3": {
     "title": {
       "text": "10/10 料号产出",
@@ -181,30 +173,44 @@
         }
       ]
     },
-    "xAxis": {
+    "xAxis":{
       "data": [
         "M10"
       ],
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+      "axisLine":{
+        "show": false,
+        "lineStyle":{
+          "color":"FFFFFF"
         }
+      },
+      "axisTick":{
+        "show": true
       }
     },
     "yAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+        "name":"数量(颗)",
+        "axisLine":{
+          "show":false,
+          "lineStyle":{
+            "color":"#FFFFFF"
+          }
+        },
+        "splitLine":{
+          "show": false
         }
-      }
     },
-    "series": [
+    "series":[
       {
         "name": "产出料号",
         "color": "#5470C6",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           20
@@ -215,7 +221,11 @@
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           50
@@ -236,7 +246,7 @@
       "left": "center",
       "data": [
         {
-          "name": "外部MO",
+          "name": "MO件数",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -251,30 +261,44 @@
         }
       ]
     },
-    "xAxis": {
+    "xAxis":{
       "data": [
         "M10"
       ],
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+      "axisLine":{
+        "show": false,
+        "lineStyle":{
+          "color":"FFFFFF"
         }
+      },
+      "axisTick":{
+        "show": true
       }
     },
     "yAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+        "name":"数量(件)",
+        "axisLine":{
+          "show":false,
+          "lineStyle":{
+            "color":"#FFFFFF"
+          }
+        },
+        "splitLine":{
+          "show": false
         }
-      }
     },
-    "series": [
+    "series":[
       {
-        "name": "外部MO",
+        "name": "MO件数",
         "color": "#5470C6",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           20
@@ -285,7 +309,11 @@
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           50
@@ -306,7 +334,7 @@
       "left": "center",
       "data": [
         {
-          "name": "外部MO",
+          "name": "MO件数",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -321,30 +349,44 @@
         }
       ]
     },
-    "xAxis": {
+    "xAxis":{
       "data": [
         "M10"
       ],
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+      "axisLine":{
+        "show": false,
+        "lineStyle":{
+          "color":"FFFFFF"
         }
+      },
+      "axisTick":{
+        "show": true
       }
     },
     "yAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+        "name":"数量(件)",
+        "axisLine":{
+          "show":false,
+          "lineStyle":{
+            "color":"#FFFFFF"
+          }
+        },
+        "splitLine":{
+          "show": false
         }
-      }
     },
-    "series": [
+    "series":[
       {
-        "name": "外部MO",
+        "name": "MO件数",
         "color": "#5470C6",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           20
@@ -355,7 +397,11 @@
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           50
@@ -376,7 +422,7 @@
       "left": "center",
       "data": [
         {
-          "name": "外部MO",
+          "name": "MO件数",
           "textStyle": {
             "color": "#FFFFFF",
             "fontSize": "16"
@@ -391,30 +437,44 @@
         }
       ]
     },
-    "xAxis": {
+    "xAxis":{
       "data": [
         "M10"
       ],
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+      "axisLine":{
+        "show": false,
+        "lineStyle":{
+          "color":"FFFFFF"
         }
+      },
+      "axisTick":{
+        "show": true
       }
     },
     "yAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
+        "name":"数量(件)",
+        "axisLine":{
+          "show":false,
+          "lineStyle":{
+            "color":"#FFFFFF"
+          }
+        },
+        "splitLine":{
+          "show": false
         }
-      }
     },
-    "series": [
+    "series":[
       {
-        "name": "外部MO",
+        "name": "MO件数",
         "color": "#5470C6",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           20
@@ -425,7 +485,11 @@
         "color": "#96CB7D",
         "type": "bar",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           50
