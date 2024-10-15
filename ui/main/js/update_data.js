@@ -72,7 +72,7 @@ async function run() {
   }
   
   await setInterval(fetchData, 120000);
-  // await startCarousel();
+  await startCarousel();
 }
 
 function resizeCharts() {
@@ -90,6 +90,11 @@ function resizeCharts() {
 window.addEventListener('resize', function() {
   resizeCharts();
 });
+
+// const ele = document.querySelector('.carousel li');
+// const styles = window.getComputedStyle(ele);
+// const margin = styles.getPropertyValue('margin-top');
+// console.log(margin);
 
 run();
 
