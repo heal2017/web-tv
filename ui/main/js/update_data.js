@@ -52,6 +52,16 @@ async function fetchData() {
   var component6 = echarts.init(document.getElementById('component6'));
   var component6_data = JSON.parse(JSON.stringify(jsonData))['component6'];
   component6.setOption(component6_data);
+
+  // npi_ncn
+  var npi_ncn = echarts.init(document.getElementById('npi_ncn'));
+  var npi_ncn_data = JSON.parse(JSON.stringify(jsonData))['npi_ncn'];
+  npi_ncn.setOption(npi_ncn_data);
+
+  // npi_customer
+  var npi_customer = echarts.init(document.getElementById('npi_customer'));
+  var npi_customer_data = JSON.parse(JSON.stringify(jsonData))['npi_customer'];
+  npi_customer.setOption(npi_customer_data);
   
   // // component6
   // var component6 = echarts.init(document.getElementById('component6'));

@@ -423,5 +423,117 @@
         ]
       }
     ]
+  },
+
+  "npi_ncn": {
+    "title": {
+      "text": "M10 NPI NCN结案率",
+      "top": "top",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "24"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "show": false
+    },
+    "xAxis":{
+      "data": [
+        "NCN目标(%)", "结案率(%)"
+      ],
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "FFFFFF"
+        }
+      },
+      "axisLabel": {
+        "fontSize": 20
+      },
+      "axisTick": {
+        "show": true
+      }
+    },
+    "yAxis": {
+        "name": "结案率(%)",
+        "axisLine": {
+          "show": false,
+          "lineStyle": {
+            "color": "#FFFFFF"
+          }
+        },
+        "splitLine": {
+          "show": false
+        }
+    },
+    "series": [
+      {
+        "type": "bar",
+        "label": {
+          "show": "true",
+          "textStyle": {
+            "fontSize": "20",
+            "fontWeight": "bold"
+          }
+        },
+        "data": [
+          {
+            "value": 100,
+            "itemStyle": {
+              "color": "#5470C6"
+            }
+          },
+          {
+            "value": 80,
+            "itemStyle": {
+              "color": "#A04040"
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+
+  "npi_customer": {
+    "title": {
+      "text": "M10 NPI新客户",
+      "top": "top",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "24"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "16"
+      }
+    },
+    "series": [
+      {
+        "name": "",
+        "type": "pie",
+        "itemStyle": {
+          "borderColor": "#FFFFFF",
+          "borderWidth": 1
+        },
+        "data": [
+          { "value": 10, "name": "客户1" },
+          { "value": 23, "name": "客户2" },
+          { "value": 38, "name": "客户3" },
+          { "value": 28, "name": "客户4" }
+        ],
+        "label": {
+          "position": "inside"
+        }
+      }
+    ]
   }
 }
