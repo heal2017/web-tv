@@ -16,7 +16,7 @@
     </div>
 
     <div class="flex-row">
-      <!-- 料号产出 -->
+      <!-- 料号产出 接收 余量-->
       <div class="flex-column">
 
         <div class="container">
@@ -49,7 +49,20 @@
         </div>
 
         <div class="container">
-          <div id="component6" class="chart"></div>
+          <div class="title">制前品质异常结案进度</div>
+
+          <div class="premake-container1">
+            <div class="premake-content1">累计</div>
+            <div class="premake-content1">新增</div>
+            <div class="premake-content1">结案</div>
+          </div>
+
+          <div class="premake-container2">
+            <div class="premake-content2">4</div>
+            <div class="premake-content2">0</div>
+            <div class="premake-content3" style="color: green">4</div>
+          </div>
+
           <div class="boxfoot"></div>
         </div>
       </div>
@@ -58,16 +71,60 @@
 
         <!-- 工安 -->
         <div class="container">
-          <div class="title">工安</div>
+          <div class="title">产品部工安</div>
 
-          <div class="safe-content1">未发生工安事件天数</div>
+          <div class="safe-content1">2024年累计工安件数</div>
           <div class="safe-content2">00</div>
 
           <div class="boxfoot"></div>
         </div>
 
-        <!-- 自动化成果 -->
         <div class="container">
+          <div class="title">NPI检讨</div>
+
+          <div class="npi-container1">
+            <div class="npi-content1">累计</div>
+            <div class="npi-content1">新增</div>
+            <div class="npi-content1">结案</div>
+          </div>
+
+          <div class="npi-container2">
+            <div class="npi-content2">96</div>
+            <div class="npi-content2">0</div>
+            <div class="npi-content3" style="color: #C04040">82</div>
+          </div>
+          <div class="boxfoot"></div>
+        </div>
+
+        <div class="container">
+          <div class="title">M10 NPI成本</div>
+
+          <div class="npi-container1">
+            <div class="npi-content1">目标</div>
+            <div class="npi-content1">累计</div>
+          </div>
+
+          <div class="npi-container2">
+            <div class="npi-content3">
+              <div>130W</div>
+              <div>RMB</div>
+            </div>
+
+            <div class="npi-content3">
+              <div style="color: green">51.2W</div>
+              <div style="color: green">RMB</div>
+            </div>
+          </div>
+          <div class="boxfoot"></div>
+        </div>
+
+
+      </div>
+
+      <!-- NPI -->
+      <div class="flex-column">
+        <!-- 自动化成果 -->
+        <div class="container" style="height: 46%">
 
           <div class="title">自动化成果</div>
 
@@ -98,7 +155,8 @@
                   <span>项目</span>
                   <span>ECD</span>
                   <span>EPL</span>
-                  <span>产出提升(颗)</span>
+                  <span>产出提升</span>
+                  <span>灯号</span>
                 </li>
               </ul>
             </div>
@@ -109,36 +167,81 @@
                 <li>
                   <span>1.蓝图自动化</span>
                   <span>已完成</span>
-                  <span>EPL3</span>
-                  <span>产出提升1颗</span>
+                  <span>5↗3</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
                 </li>
 
                 <li>
                   <span>2.TRA信息录入</span>
                   <span>已完成</span>
-                  <span>EPL2</span>
-                  <span>产出提升2颗</span>
+                  <span>5↗2</span>
+                  <span>2颗</span>
+                  <span style="color: green">●</span>
                 </li>
 
                 <li>
                   <span>3.工站优化</span>
                   <span>已完成</span>
-                  <span>EPL2</span>
-                  <span>产出提升1颗</span>
+                  <span>5↗3</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
                 </li>
 
                 <li>
-                  <span>4.资料输出</span>
+                  <span>4.资料自动输出</span>
                   <span>已完成</span>
-                  <span>EPL2</span>
-                  <span>产出提升2颗</span>
+                  <span>5↗2</span>
+                  <span>2颗</span>
+                  <span style="color: green">●</span>
                 </li>
 
                 <li>
-                  <span>5.CAM Check</span>
-                  <span>已完成</span>
-                  <span>EPL2</span>
-                  <span>产出提升1颗</span>
+                  <span>5.板边系统优化</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: #F01010">●</span>
+                </li>
+
+                <li>
+                  <span>6.板边系统优化</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: #F01010">●</span>
+                </li>
+
+                <li>
+                  <span>7.ECN自动作废</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
+                </li>
+
+                <li>
+                  <span>8.CAM参数自动化</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
+                </li>
+
+                <li>
+                  <span>9.Notes自动化</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
+                </li>
+
+                <li>
+                  <span>10.CAM Check</span>
+                  <span>10/15</span>
+                  <span>5↗2</span>
+                  <span>1颗</span>
+                  <span style="color: green">●</span>
                 </li>
 
               </ul>
@@ -146,23 +249,14 @@
           <div class="boxfoot"></div>
         </div>
 
-      </div>
 
-      <!-- NPI -->
-      <div class="flex-column">
-        <div class="container">
-          <div id="npi_ncn" class="chart"></div>
-          <div class="boxfoot"></div>
-        </div>
-
-        <div class="container">
-          <div id="npi_customer" class="chart"></div>
-          <div class="boxfoot"></div>
-        </div>
       </div>
 
     </div>
 
+    <!--
+    <canvas id="canvas" style="position:absolute; top:0; left:0;"></canvas>
+    -->
   </body>
 
   <script type="text/javascript" src="js/echarts.min.js"></script>

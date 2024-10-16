@@ -1,12 +1,12 @@
 {
   "component1": {
     "title": {
-      "text": "M10 料号产出",
+      "text": "10月 累计新料号产出",
       "top": "top",
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "24"
+        "fontSize": "20"
       }
     },
     "tooltip": {},
@@ -31,16 +31,16 @@
       }
     },
     "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
+      "name": "数量(颗)",
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "#FFFFFF"
         }
+      },
+      "splitLine": {
+        "show": false
+      }
     },
     "series": [
       {
@@ -78,53 +78,201 @@
 
   "component2": {
     "title": {
-      "text": "M10 料号类型",
+      "text": "新料号接收趋势",
       "top": "top",
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "24"
+        "fontSize": "20"
       }
     },
     "tooltip": {},
     "legend": {
       "bottom": "0%",
       "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "16"
+      "data": [
+        {
+          "name": "MD",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "14"
+          }
+        },
+        {
+          "name": "OM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "HLC",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "PJ9",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "其他",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "累计",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M08",
+        "M09",
+        "M10"
+      ],
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "FFFFFF"
+        }
+      },
+      "axisLabel": {
+        "fontSize": 14
+      },
+      "axisTick": {
+        "show": true
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      },
+      "splitLine": {
+        "show": false
       }
     },
     "series": [
       {
-        "name": "",
-        "type": "pie",
-        "itemStyle": {
-          "borderColor": "#FFFFFF",
-          "borderWidth": 1
+        "name": "MD",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
         },
         "data": [
-          { "value": 10, "name": "MD" },
-          { "value": 23, "name": "OM" },
-          { "value": 38, "name": "HLC" },
-          { "value": 28, "name": "PJ9" },
-          { "value": 28, "name": "其他" }
-        ],
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "name": "OM",
+        "type": "bar",
+        "stack": "total",
         "label": {
-          "position": "inside"
-        }
+          "show": "true"
+        },
+        "data": [
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "name": "HLC",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "name": "PJ9",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          6,
+          4,
+          2
+        ]
+      },
+      {
+        "name": "其他",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          0,
+          7,
+          5
+        ]
+      },
+      {
+        "name": "目标",
+        "type": "line",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "name": "累计",
+        "type": "line",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          15,
+          25,
+          24
+        ]
       }
     ]
   },
 
   "component3": {
     "title": {
-      "text": "M10 料号产出",
+      "text": "新料号库存量趋势",
       "top": "top",
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "24"
+        "fontSize": "20"
       }
     },
     "tooltip": {},
@@ -166,31 +314,51 @@
             "color": "#FFFFFF",
             "fontSize": "16"
           }
+        },
+        {
+          "name": "目标",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "累计",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
         }
       ]
     },
     "xAxis": {
-      "axisLine": {
-        "lineStyle": {
-          "color": "#FFFFFF"
-        }
-      }
-    },
-    "yAxis": {
       "data": [
         "M08",
         "M09",
-        "M10",
-        "  ",
-        "W38",
-        "W39",
-        "W41",
-        "W42"
+        "M10"
       ],
       "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "FFFFFF"
+        }
+      },
+      "axisLabel": {
+        "fontSize": 14
+      },
+      "axisTick": {
+        "show": true
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "show": false,
         "lineStyle": {
           "color": "#FFFFFF"
         }
+      },
+      "splitLine": {
+        "show": false
       }
     },
     "series": [
@@ -202,14 +370,9 @@
           "show": "true"
         },
         "data": [
-          90,
-          93,
-          85,
           0,
-          21,
-          23,
-          25,
-          24
+          2,
+          1
         ]
       },
       {
@@ -220,14 +383,9 @@
           "show": "true"
         },
         "data": [
-          99,
-          106,
-          95,
-          0,
-          22,
-          25,
-          26,
-          28
+          5,
+          6,
+          8
         ]
       },
       {
@@ -238,14 +396,9 @@
           "show": "true"
         },
         "data": [
-          98,
-          96,
-          98,
-          0,
-          26,
-          24,
-          22,
-          25
+          4,
+          6,
+          8
         ]
       },
       {
@@ -256,14 +409,9 @@
           "show": "true"
         },
         "data": [
-          105,
-          95,
-          98,
-          0,
-          24,
-          26,
-          24,
-          22
+          6,
+          4,
+          2
         ]
       },
       {
@@ -274,27 +422,47 @@
           "show": "true"
         },
         "data": [
-          98,
-          96,
-          97,
           0,
-          24,
-          20,
-          27,
-          25
+          7,
+          5
+        ]
+      },
+      {
+        "name": "目标",
+        "type": "line",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "name": "累计",
+        "type": "line",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          15,
+          25,
+          24
         ]
       }
     ]
+
   },
 
   "component4": {
     "title": {
-      "text": "M10 MO",
+      "text": "10月 制前累计品质异常件数",
       "top": "top",
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "24"
+        "fontSize": "20"
       }
     },
     "tooltip": {},
@@ -303,7 +471,7 @@
     },
     "xAxis":{
       "data": [
-        "目标MO", "MO"
+        "目标", "累计"
       ],
       "axisLine": {
         "show": false,
@@ -344,153 +512,11 @@
           {
             "value": 0,
             "itemStyle": {
-              "color": "#A04040"
+              "color": "#96CB7D"
             }
           },
           {
             "value": 4,
-            "itemStyle": {
-              "color": "#96CB7D"
-            }
-          }
-        ]
-      }
-    ]
-  },
-
-  "component5": {
-    "title": {
-      "text": "W42 MO",
-      "top": "top",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "24"
-      }
-    },
-    "tooltip": {},
-    "legend": {
-      "show": false
-    },
-    "xAxis":{
-      "data": [
-        "目标MO", "MO"
-      ],
-      "axisLine": {
-        "show": false,
-        "lineStyle": {
-          "color": "FFFFFF"
-        }
-      },
-      "axisLabel": {
-        "fontSize": 20
-      },
-      "axisTick": {
-        "show": true
-      }
-    },
-    "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
-        }
-    },
-    "series": [
-      {
-        "type": "bar",
-        "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
-        },
-        "data": [
-          {
-            "value": 0,
-            "itemStyle": {
-              "color": "#5470C6"
-            }
-          },
-          {
-            "value": 1,
-            "itemStyle": {
-              "color": "#A04040"
-            }
-          }
-        ]
-      }
-    ]
-  },
-
-  "component6": {
-    "title": {
-      "text": "10/10 MO",
-      "top": "top",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "24"
-      }
-    },
-    "tooltip": {},
-    "legend": {
-      "show": false
-    },
-    "xAxis":{
-      "data": [
-        "目标MO", "MO"
-      ],
-      "axisLine": {
-        "show": false,
-        "lineStyle": {
-          "color": "FFFFFF"
-        }
-      },
-      "axisLabel": {
-        "fontSize": 20
-      },
-      "axisTick": {
-        "show": true
-      }
-    },
-    "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
-        }
-    },
-    "series": [
-      {
-        "type": "bar",
-        "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
-        },
-        "data": [
-          {
-            "value": 0,
-            "itemStyle": {
-              "color": "#5470C6"
-            }
-          },
-          {
-            "value": 0,
             "itemStyle": {
               "color": "#A04040"
             }
@@ -502,7 +528,7 @@
 
   "npi_ncn": {
     "title": {
-      "text": "M10 NPI NCN结案率",
+      "text": "10 NPI成本",
       "top": "top",
       "left": "center",
       "textStyle": {
@@ -571,10 +597,48 @@
     ]
   },
 
+  "component5": {
+    "title": {
+      "text": "10月 制前品质异常占比",
+      "top": "top",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "20"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "16"
+      }
+    },
+    "series": [
+      {
+        "name": "",
+        "type": "pie",
+        "itemStyle": {
+          "borderColor": "#FFFFFF",
+          "borderWidth": 1
+        },
+        "data": [
+          { "value": 2, "name": "人员" },
+          { "value": 2, "name": "系统" }
+        ],
+        "label": {
+          "position": "inside",
+          "formatter": "{b}: {d}%"
+        }
+      }
+    ]
+  },
 
   "npi_customer": {
     "title": {
-      "text": "M10 NPI新客户",
+      "text": "NPI检讨",
       "top": "top",
       "left": "center",
       "textStyle": {
