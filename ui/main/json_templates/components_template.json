@@ -467,11 +467,30 @@
     },
     "tooltip": {},
     "legend": {
-      "show": false
-    },
-    "xAxis":{
+      "bottom": "0%",
+      "left": "center",
       "data": [
-        "目标", "累计"
+        {
+          "name": "目标",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "累计",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M08",
+        "M09",
+        "M10"
       ],
       "axisLine": {
         "show": false,
@@ -480,50 +499,50 @@
         }
       },
       "axisLabel": {
-        "fontSize": 20
+        "fontSize": 14
       },
       "axisTick": {
         "show": true
       }
     },
     "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "#FFFFFF"
         }
+      },
+      "splitLine": {
+        "show": false
+      }
     },
     "series": [
       {
-        "type": "bar",
+        "name": "目标",
+        "type": "line",
         "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
+          "show": "true"
         },
         "data": [
-          {
-            "value": 0,
-            "itemStyle": {
-              "color": "#96CB7D"
-            }
-          },
-          {
-            "value": 4,
-            "itemStyle": {
-              "color": "#A04040"
-            }
-          }
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "累计",
+        "type": "bar",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          2,
+          2,
+          4
         ]
       }
     ]
+
   },
 
   "npi_ncn": {
