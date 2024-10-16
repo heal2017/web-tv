@@ -15,7 +15,7 @@
     },
     "xAxis":{
       "data": [
-        "产出目标", "产出料号"
+        "挑战目标", "必达目标", "产出料号"
       ],
       "axisLine": {
         "show": false,
@@ -54,13 +54,19 @@
         },
         "data": [
           {
+            "value": 84,
+            "itemStyle": {
+              "color": "#5470C6"
+            }
+          },
+          {
             "value": 80,
             "itemStyle": {
               "color": "#5470C6"
             }
           },
           {
-            "value": 85,
+            "value": 84,
             "itemStyle": {
               "color": "#96CB7D"
             }
@@ -72,7 +78,7 @@
 
   "component2": {
     "title": {
-      "text": "W42 料号产出",
+      "text": "M10 料号类型",
       "top": "top",
       "left": "center",
       "textStyle": {
@@ -82,68 +88,38 @@
     },
     "tooltip": {},
     "legend": {
-      "show": false
-    },
-    "xAxis":{
-      "data": [
-        "产出目标", "产出料号"
-      ],
-      "axisLine": {
-        "show": false,
-        "lineStyle": {
-          "color": "FFFFFF"
-        }
-      },
-      "axisLabel": {
-        "fontSize": 20
-      },
-      "axisTick": {
-        "show": true
+      "bottom": "0%",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "16"
       }
-    },
-    "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
-        }
     },
     "series": [
       {
-        "type": "bar",
-        "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
+        "name": "",
+        "type": "pie",
+        "itemStyle": {
+          "borderColor": "#FFFFFF",
+          "borderWidth": 1
         },
         "data": [
-          {
-            "value": 20,
-            "itemStyle": {
-              "color": "#5470C6"
-            }
-          },
-          {
-            "value": 15,
-            "itemStyle": {
-              "color": "#A04040"
-            }
-          }
-        ]
+          { "value": 10, "name": "MD" },
+          { "value": 23, "name": "OM" },
+          { "value": 38, "name": "HLC" },
+          { "value": 28, "name": "PJ9" },
+          { "value": 28, "name": "其他" }
+        ],
+        "label": {
+          "position": "inside"
+        }
       }
     ]
   },
 
   "component3": {
     "title": {
-      "text": "10/10 料号产出",
+      "text": "M10 料号产出",
       "top": "top",
       "left": "center",
       "textStyle": {
@@ -153,60 +129,159 @@
     },
     "tooltip": {},
     "legend": {
-      "show": false
-    },
-    "xAxis":{
+      "bottom": "0%",
+      "left": "center",
       "data": [
-        "产出目标", "产出料号"
-      ],
-      "axisLine": {
-        "show": false,
-        "lineStyle": {
-          "color": "FFFFFF"
+        {
+          "name": "MD",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "OM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "HLC",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "PJ9",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "其他",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
         }
-      },
-      "axisLabel": {
-        "fontSize": 20
-      },
-      "axisTick": {
-        "show": true
+      ]
+    },
+    "xAxis": {
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
       }
     },
     "yAxis": {
-        "name": "数量(颗)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
+      "data": [
+        "M08",
+        "M09",
+        "M10",
+        "  ",
+        "W38",
+        "W39",
+        "W41",
+        "W42"
+      ],
+      "axisLine": {
+        "lineStyle": {
+          "color": "#FFFFFF"
         }
+      }
     },
     "series": [
       {
+        "name": "MD",
         "type": "bar",
+        "stack": "total",
         "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
+          "show": "true"
         },
         "data": [
-          {
-            "value": 20,
-            "itemStyle": {
-              "color": "#5470C6"
-            }
-          },
-          {
-            "value": 15,
-            "itemStyle": {
-              "color": "#A04040"
-            }
-          }
+          90,
+          93,
+          85,
+          0,
+          21,
+          23,
+          25,
+          24
+        ]
+      },
+      {
+        "name": "OM",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          99,
+          106,
+          95,
+          0,
+          22,
+          25,
+          26,
+          28
+        ]
+      },
+      {
+        "name": "HLC",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          98,
+          96,
+          98,
+          0,
+          26,
+          24,
+          22,
+          25
+        ]
+      },
+      {
+        "name": "PJ9",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          105,
+          95,
+          98,
+          0,
+          24,
+          26,
+          24,
+          22
+        ]
+      },
+      {
+        "name": "其他",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          98,
+          96,
+          97,
+          0,
+          24,
+          20,
+          27,
+          25
         ]
       }
     ]
