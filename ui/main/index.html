@@ -39,6 +39,7 @@
             <div class="grid-item" style="color: #54C076">●</div>
 
           </div>
+
           <div id="component1" class="chart"></div>
           <div class="boxfoot"></div>
         </div>
@@ -57,53 +58,21 @@
 
       <!-- 品质异常 -->
       <div class="flex-column">
-        <div class="container" style="height: 46%">
+        <div class="container">
           <div id="component4" class="chart"></div>
           <div class="boxfoot"></div>
         </div>
 
         <div class="container">
-          <div class="title">制前品质异常结案率</div>
+          <div id="component5" class="chart"></div>
+          <div class="boxfoot"></div>
+        </div>
 
-          <div class="premake-container1">
-            <div class="premake-content1">年累计</div>
-            <div class="premake-content1">月新增</div>
-            <div class="premake-content1">结案</div>
-          </div>
+        <div class="container">
+          <div class="title">M10-NPI OTD Fail件数</div>
 
-          <div class="premake-container2">
-            <div class="premake-content2">4</div>
-            <div class="premake-content2">0</div>
-            <div class="premake-content3" style="color: green">4</div>
-          </div>
-
-          <ul class="exception-carousel-head">
-            <li style="border: none; margin: 0;">
-              <span>项目</span>
-              <span>累计</span>
-              <span>新增</span>
-              <span>结案</span>
-            </li>
-          </ul>
-
-          <div class="exception-carousel-container">
-            <ul class="exception-carousel">
-
-              <li>
-                <span>1.内部异常</span>
-                <span>3</span>
-                <span>0</span>
-                <span>3</span>
-              </li>
-
-              <li>
-                <span>2.外部异常</span>
-                <span>1</span>
-                <span>0</span>
-                <span>1</span>
-              </li>
-
-            </ul>
+          <div class="npi-otd-container">
+            <div class="npi-otd-content">0</div>
           </div>
 
           <div class="boxfoot"></div>
@@ -113,6 +82,24 @@
 
       <div class="flex-column">
         <div class="container" style="height: 46%">
+          <div class="title">NPI检讨结案率</div>
+
+          <div class="npi-review-container1">
+            <div class="npi-review-content1">年累计</div>
+            <div class="npi-review-content1">月新增</div>
+            <div class="npi-review-content1">年结案</div>
+          </div>
+
+          <div class="npi-review-container2">
+            <div class="npi-review-content2">96</div>
+            <div class="npi-review-content2">0</div>
+            <div class="npi-review-content3" style="color: #C04040">82</div>
+          </div>
+
+          <div class="boxfoot"></div>
+        </div>
+
+        <div class="container">
           <div class="title">M10 NPI成本</div>
 
           <div class="npi-cost-container1">
@@ -131,24 +118,10 @@
               <div style="color: green">RMB</div>
             </div>
           </div>
-          <div class="boxfoot"></div>
-        </div>
 
-        <div class="container">
-          <div class="title">NPI检讨结案率</div>
+          <div id="component6" class="chart" style="height: 50%"></div>
 
-          <div class="npi-review-container1">
-            <div class="npi-review-content1">年累计</div>
-            <div class="npi-review-content1">月新增</div>
-            <div class="npi-review-content1">年结案</div>
-          </div>
-
-          <div class="npi-review-container2">
-            <div class="npi-review-content2">96</div>
-            <div class="npi-review-content2">0</div>
-            <div class="npi-review-content3" style="color: #C04040">82</div>
-          </div>
-
+          <!--
           <ul class="npi-carousel-head">
             <li style="border: none; margin: 0;">
               <span>项目</span>
@@ -184,6 +157,7 @@
 
             </ul>
           </div>
+          -->
 
           <div class="boxfoot"></div>
         </div>
@@ -197,6 +171,20 @@
 
           <div class="title">自动化成果</div>
 
+          <div class="auto-grid-container">
+
+            <div class="auto-grid-item">提效</div>
+            <div class="auto-grid-item">28</div>
+
+            <div class="auto-grid-item">防呆</div>
+            <div class="auto-grid-item">23</div>
+
+            <div class="auto-grid-item">累计</div>
+            <div class="auto-grid-item">23</div>
+
+          </div>
+
+          <!--
           <div class="automatic-container1">
             <div class="automatic-content1">累计件数</div>
             <div class="automatic-content1">累计效益</div>
@@ -209,6 +197,19 @@
               <div>RMB</div>
             </div>
           </div>
+          -->
+
+          <div class="automatic-container1">
+            <div class="automatic-content1">累计效益</div>
+          </div>
+
+          <div class="automatic-container2">
+            <div class="automatic-content3">
+              <div>10W</div>
+              <div>RMB</div>
+            </div>
+          </div>
+
 
           <div class="boxfoot"></div>
         </div>

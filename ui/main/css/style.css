@@ -72,7 +72,7 @@ body {
     display: grid;
     position: absolute;
     top: 4%;
-    right: 2%;
+    right: 4%;
     width: 6vw;
     height: 6vh;
     // background-color: pink;
@@ -91,6 +91,32 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.3vh;
+}
+
+.auto-grid-container {
+    display: grid;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    // background-color: pink;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.auto-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    // background-color: lightblue;
+    border: .1vh solid white;
+    width: 100%;
+    height: 100%;
+    font-size: 2.3vh;
 }
 
 .flex-row {
@@ -245,22 +271,56 @@ body {
   background-color: rgba(80, 80, 180, 0.3);
 }
 
+.npi-otd-container {
+  display: flex;
+  // background-color: pink;
+  position: relative;
+  justify-content: space-evenly;
+  height: 80%;
+  top: 40%;
+}
+
+.npi-otd-content {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  font-size: 6vh;
+  justify-content: center;
+  margin: 1vh;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(207, 219, 123, 1);
+  border: .1vh solid rgba(255, 255, 255, 1);
+  border-radius: 2vh;
+  background-color: rgba(80, 80, 180, 0.3);
+}
+
 .automatic-container1 {
   display: flex;
-  position: relative;
-  top: 20%;
+  // position: relative;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-50%, 0);
 }
 
 .automatic-container2 {
   display: flex;
-  position: relative;
-  justify-content: space-evenly;
-  height: 80%;
+  // position: relative;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 60%;
   top: 20%;
 }
 
 .automatic-content1 {
   display: flex;
+  // position: relative;
+  top: 10%;
+  left: 5%;
   width: 100%;
   font-size: 1vw;
   color: #FFFFFF;
@@ -287,7 +347,10 @@ body {
 .automatic-content3 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  width: 50%;
   height: 60%;
   font-size: 4vh;
   justify-content: center;
@@ -305,7 +368,7 @@ body {
   display: flex;
   // background-color: pink;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 
 .npi-cost-container2 {
@@ -313,8 +376,8 @@ body {
   // background-color: pink;
   position: relative;
   justify-content: space-evenly;
-  height: 80%;
-  top: 20%;
+  height: 40%;
+  top: 10%;
 }
 
 .npi-cost-content1 {
@@ -363,7 +426,7 @@ body {
   display: flex;
   // background-color: pink;
   position: relative;
-  top: 10%;
+  top: 20%;
 }
 
 .npi-review-container2 {
@@ -372,7 +435,7 @@ body {
   position: relative;
   justify-content: space-evenly;
   height: 80%;
-  top: 10%;
+  top: 20%;
 }
 
 .npi-review-content1 {
@@ -387,7 +450,7 @@ body {
 .npi-review-content2 {
   display: flex;
   width: 100%;
-  height: 20%;
+  height: 60%;
   font-size: 4vh;
   justify-content: center;
   margin: 1vh;
@@ -404,7 +467,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 20%;
+  height: 60%;
   font-size: 4vh;
   justify-content: center;
   margin: 1vh;

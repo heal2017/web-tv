@@ -589,6 +589,265 @@
         ]
       }
     ]
-  }
+  },
 
+  "component5": {
+    "title": {
+      "text": "制前TRA件数",
+      "top": "top",
+      "left": "center",
+      "textStyle": {
+        "color": "#FFFFFF",
+        "fontSize": "18"
+      }
+    },
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "P",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "P+",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "D",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "累计",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M08",
+        "M09",
+        "M10"
+      ],
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "FFFFFF"
+        }
+      },
+      "axisLabel": {
+        "fontSize": 14
+      },
+      "axisTick": {
+        "show": true
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      },
+      "splitLine": {
+        "show": false
+      }
+    },
+    "series": [
+      {
+        "name": "P",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "name": "P+",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "D",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "name": "累计",
+        "type": "line",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          6,
+          6,
+          4
+        ]
+      }
+    ]
+  },
+
+  "component6": {
+    "tooltip": {},
+    "legend": {
+      "bottom": "0%",
+      "left": "center",
+      "data": [
+        {
+          "name": "在制报废",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "溢制报废",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "批量报废",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "目标",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        }
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "M08",
+        "M09",
+        "M10"
+      ],
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "FFFFFF"
+        }
+      },
+      "axisLabel": {
+        "fontSize": 14
+      },
+      "axisTick": {
+        "show": true
+      }
+    },
+    "yAxis": {
+      "axisLine": {
+        "show": false,
+        "lineStyle": {
+          "color": "#FFFFFF"
+        }
+      },
+      "splitLine": {
+        "show": false
+      }
+    },
+    "series": [
+      {
+        "name": "在制报废",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "name": "溢制报废",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "批量报废",
+        "type": "bar",
+        "stack": "total",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "name": "目标",
+        "type": "line",
+        "color": "#A04040",
+        "smooth": "true",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          6,
+          6,
+          4
+        ]
+      }
+    ]
+  }
 }
