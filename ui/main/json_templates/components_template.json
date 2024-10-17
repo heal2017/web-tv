@@ -6,7 +6,7 @@
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "20"
+        "fontSize": "18"
       }
     },
     "tooltip": {},
@@ -83,7 +83,7 @@
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "20"
+        "fontSize": "18"
       }
     },
     "tooltip": {},
@@ -272,7 +272,7 @@
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "20"
+        "fontSize": "18"
       }
     },
     "tooltip": {},
@@ -452,17 +452,16 @@
         ]
       }
     ]
-
   },
 
   "component4": {
     "title": {
-      "text": "10月 制前累计品质异常件数",
+      "text": "10月 制前品质异常件数",
       "top": "top",
       "left": "center",
       "textStyle": {
         "color": "#FFFFFF",
-        "fontSize": "20"
+        "fontSize": "18"
       }
     },
     "tooltip": {},
@@ -470,6 +469,41 @@
       "bottom": "0%",
       "left": "center",
       "data": [
+        {
+          "name": "MD",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "OM",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "HLC",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "PJ9",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
+        {
+          "name": "其他",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "16"
+          }
+        },
         {
           "name": "目标",
           "textStyle": {
@@ -518,185 +552,95 @@
     },
     "series": [
       {
+        "name": "MD",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "name": "OM",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "name": "HLC",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "name": "PJ9",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          6,
+          4,
+          2
+        ]
+      },
+      {
+        "name": "其他",
+        "type": "bar",
+        "stack": "total",
+        "label": {
+          "show": "true"
+        },
+        "data": [
+          0,
+          7,
+          5
+        ]
+      },
+      {
         "name": "目标",
         "type": "line",
         "label": {
           "show": "true"
         },
         "data": [
-          0,
-          0,
-          0
+          10,
+          10,
+          10
         ]
       },
       {
         "name": "累计",
-        "type": "bar",
+        "type": "line",
         "label": {
           "show": "true"
         },
-        "color": "#A04040",
-        "textStyle": {
-          "fontSize": "20",
-          "fontWeight": "bold"
-        },
         "data": [
-          2,
-          2,
-          4
+          15,
+          25,
+          24
         ]
-      }
-    ]
-
-  },
-
-  "npi_ncn": {
-    "title": {
-      "text": "10 NPI成本",
-      "top": "top",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "24"
-      }
-    },
-    "tooltip": {},
-    "legend": {
-      "show": false
-    },
-    "xAxis":{
-      "data": [
-        "NCN目标(%)", "结案率(%)"
-      ],
-      "axisLine": {
-        "show": false,
-        "lineStyle": {
-          "color": "FFFFFF"
-        }
-      },
-      "axisLabel": {
-        "fontSize": 20
-      },
-      "axisTick": {
-        "show": true
-      }
-    },
-    "yAxis": {
-        "name": "结案率(%)",
-        "axisLine": {
-          "show": false,
-          "lineStyle": {
-            "color": "#FFFFFF"
-          }
-        },
-        "splitLine": {
-          "show": false
-        }
-    },
-    "series": [
-      {
-        "type": "bar",
-        "label": {
-          "show": "true",
-          "textStyle": {
-            "fontSize": "20",
-            "fontWeight": "bold"
-          }
-        },
-        "data": [
-          {
-            "value": 100,
-            "itemStyle": {
-              "color": "#5470C6"
-            }
-          },
-          {
-            "value": 80,
-            "itemStyle": {
-              "color": "#A04040"
-            }
-          }
-        ]
-      }
-    ]
-  },
-
-  "component5": {
-    "title": {
-      "text": "10月 制前品质异常占比",
-      "top": "top",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "20"
-      }
-    },
-    "tooltip": {},
-    "legend": {
-      "bottom": "0%",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "16"
-      }
-    },
-    "series": [
-      {
-        "name": "",
-        "type": "pie",
-        "itemStyle": {
-          "borderColor": "#FFFFFF",
-          "borderWidth": 1
-        },
-        "data": [
-          { "value": 2, "name": "人员" },
-          { "value": 2, "name": "系统" }
-        ],
-        "label": {
-          "position": "inside",
-          "formatter": "{b}: {d}%"
-        }
-      }
-    ]
-  },
-
-  "npi_customer": {
-    "title": {
-      "text": "NPI检讨",
-      "top": "top",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "24"
-      }
-    },
-    "tooltip": {},
-    "legend": {
-      "bottom": "0%",
-      "left": "center",
-      "textStyle": {
-        "color": "#FFFFFF",
-        "fontSize": "16"
-      }
-    },
-    "series": [
-      {
-        "name": "",
-        "type": "pie",
-        "itemStyle": {
-          "borderColor": "#FFFFFF",
-          "borderWidth": 1
-        },
-        "data": [
-          { "value": 10, "name": "客户1" },
-          { "value": 23, "name": "客户2" },
-          { "value": 38, "name": "客户3" },
-          { "value": 28, "name": "客户4" }
-        ],
-        "label": {
-          "position": "inside"
-        }
       }
     ]
   }
+
 }
