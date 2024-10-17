@@ -77,7 +77,8 @@ async function run() {
   }
   
   await setInterval(fetchData, 120000);
-  await startCarousel();
+  await startAutoCarousel();
+  await startNPICarousel();
 }
 
 function resizeCharts() {

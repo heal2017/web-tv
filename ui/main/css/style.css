@@ -221,6 +221,7 @@ body {
 .automatic-container2 {
   display: flex;
   position: relative;
+  justify-content: space-evenly;
   height: 80%;
   top: 20%;
 }
@@ -267,20 +268,23 @@ body {
   background-color: rgba(80, 80, 180, 0.3);
 }
 
-.npi-container1 {
+.npi-cost-container1 {
   display: flex;
+  // background-color: pink;
   position: relative;
   top: 20%;
 }
 
-.npi-container2 {
+.npi-cost-container2 {
   display: flex;
+  // background-color: pink;
   position: relative;
+  justify-content: space-evenly;
   height: 80%;
   top: 20%;
 }
 
-.npi-content1 {
+.npi-cost-content1 {
   display: flex;
   width: 100%;
   font-size: 1vw;
@@ -289,7 +293,65 @@ body {
   align-items: center;
 }
 
-.npi-content2 {
+.npi-cost-content2 {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  font-size: 4vh;
+  justify-content: center;
+  margin: 1vh;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(207, 219, 123, 1);
+  border: .1vh solid rgba(255, 255, 255, 1);
+  border-radius: 2vh;
+  background-color: rgba(80, 80, 180, 0.3);
+}
+
+.npi-cost-content3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  font-size: 4vh;
+  justify-content: center;
+  margin: 1vh;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(207, 219, 123, 1);
+  border: .1vh solid rgba(255, 255, 255, 1);
+  border-radius: 2vh;
+  background-color: rgba(80, 80, 180, 0.3);
+}
+
+.npi-review-container1 {
+  display: flex;
+  // background-color: pink;
+  position: relative;
+  top: 20%;
+}
+
+.npi-review-container2 {
+  display: flex;
+  // background-color: pink;
+  position: relative;
+  justify-content: space-evenly;
+  height: 80%;
+  top: 20%;
+}
+
+.npi-review-content1 {
+  display: flex;
+  width: 100%;
+  font-size: 1vw;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.npi-review-content2 {
   display: flex;
   width: 100%;
   height: 20%;
@@ -305,7 +367,7 @@ body {
   background-color: rgba(80, 80, 180, 0.3);
 }
 
-.npi-content3 {
+.npi-review-content3 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -322,11 +384,15 @@ body {
   background-color: rgba(80, 80, 180, 0.3);
 }
 
-.carousel-head {
+.automatic-carousel-head {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
   height: 6%;
   width: 96%;
   // background-color: pink;
@@ -334,11 +400,11 @@ body {
   overflow: hidden;
 }
 
-.carousel-container {
+.automatic-carousel-container {
   position: absolute;
-  top: 50%;
+  top: 17%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, 0);
   height: 80%;
   width: 96%;
   // background-color: pink;
@@ -346,7 +412,44 @@ body {
   overflow: hidden;
 }
 
-.carousel {
+.automatic-carousel {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.npi-carousel-head {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  height: 6%;
+  width: 96%;
+  // background-color: pink;
+  border: .2vh solid rgba(255, 255, 255, 1);
+  overflow: hidden;
+}
+
+.npi-carousel-container {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 56%;
+  width: 96%;
+  // background-color: pink;
+  border: .2vh solid rgba(255, 255, 255, 1);
+  overflow: hidden;
+}
+
+.npi-carousel {
   width: 100%;
   list-style: none;
   padding: 0;
@@ -369,24 +472,24 @@ li {
   margin: .5vh;
 }
 
-// .carousel li:before {
+// .automatic-carousel li:before {
 //   content: counter(li-counter);
 //   counter-increment: li-counter;
 // }
 
 li span:nth-of-type(1) {
   // background-color: rgba(255, 0, 0, .2);
-  width: 35%;
+  width: 40%;
 }
 
 li span:nth-of-type(2) {
   // background-color: rgba(255, 255, 0, .2);
-  width: 16%;
+  width: 15%;
 }
  
 li span:nth-of-type(3) {
   // background-color: rgba(0, 0, 255, .2);
-  width: 12%;
+  width: 15%;
 }
  
 li span:nth-of-type(4) {
@@ -396,7 +499,7 @@ li span:nth-of-type(4) {
 
 li span:nth-of-type(5) {
   // background-color: rgba(255, 0, 255, .2);
-  width: 14%;
+  width: 18%;
 }
 
 li:nth-of-type(2n) {

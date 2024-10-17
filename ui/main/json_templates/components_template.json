@@ -535,6 +535,11 @@
         "label": {
           "show": "true"
         },
+        "color": "#A04040",
+        "textStyle": {
+          "fontSize": "20",
+          "fontWeight": "bold"
+        },
         "data": [
           2,
           2,
