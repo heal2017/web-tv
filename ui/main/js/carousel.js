@@ -34,6 +34,8 @@ function startAutoCarousel() {
   const totalItems = document.querySelectorAll('.automatic-carousel li').length;
   const itemHeight = document.querySelector('.automatic-carousel li').clientHeight;
 
+  console.log(document.querySelectorAll('.automatic-carousel li'))
+
   let index = 0;
   let isTransitioning = false;
 

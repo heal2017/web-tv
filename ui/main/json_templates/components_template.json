@@ -256,7 +256,12 @@
         "type": "line",
         "smooth": "true",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "15",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           15,
@@ -447,7 +452,12 @@
         "type": "line",
         "smooth": "true",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "15",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           15,
@@ -460,7 +470,7 @@
 
   "component4": {
     "title": {
-      "text": "制前品质异常件数",
+      "text": "制前外部漏失件数",
       "top": "top",
       "left": "center",
       "textStyle": {
@@ -567,7 +577,12 @@
         "type": "line",
         "smooth": "true",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "15",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           3,
@@ -593,7 +608,7 @@
 
   "component5": {
     "title": {
-      "text": "制前TRA件数",
+      "text": "",
       "top": "top",
       "left": "center",
       "textStyle": {
@@ -714,7 +729,12 @@
         "type": "line",
         "smooth": "true",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "15",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           6,
@@ -840,7 +860,12 @@
         "color": "#A04040",
         "smooth": "true",
         "label": {
-          "show": "true"
+          "show": "true",
+          "textStyle": {
+            "color": "#FFFFFF",
+            "fontSize": "15",
+            "fontWeight": "bold"
+          }
         },
         "data": [
           6,
